@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_676f0230d2785bbc1a0d56cc333f7da6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_676f0230d2785bbc1a0d56cc333f7da6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_676f0230d2785bbc1a0d56cc333f7da6 = L.map(
+                "map_676f0230d2785bbc1a0d56cc333f7da6",
+                {
+                    center: [20.0, -30.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e055bd9e9686313695a94004e18b97b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e055bd9e9686313695a94004e18b97b.addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var marker_b57dece90e05c21b8656554ad72b4578 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var icon_b59c479cd0f28d4899764b9f2b23889c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a695fd0b1875505ac92ef7005ce0a0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecf2e6cfed15d4704ff5e1b76d892135 = $(`<div id="html_ecf2e6cfed15d4704ff5e1b76d892135" style="width: 100.0%; height: 100.0%;">     <b>La La Land</b><br>     Director: Damien Chazelle<br>     Año: 2016<br>     Género: Musical / Romance<br>     País: Estados Unidos<br>     Coordenadas: (34.0522, -118.2437)     </div>`)[0];
+                popup_3a695fd0b1875505ac92ef7005ce0a0a.setContent(html_ecf2e6cfed15d4704ff5e1b76d892135);
+            
+        
+
+        marker_b57dece90e05c21b8656554ad72b4578.bindPopup(popup_3a695fd0b1875505ac92ef7005ce0a0a)
+        ;
+
+        
+    
+    
+            marker_b57dece90e05c21b8656554ad72b4578.bindTooltip(
+                `<div>
+                     La La Land
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b57dece90e05c21b8656554ad72b4578.setIcon(icon_b59c479cd0f28d4899764b9f2b23889c);
+            
+    
+            var marker_634628ced15ff29eea4c4efec3b15192 = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var icon_ba5b9889a249c092e3e7c5c61a5507e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f902436a8db12b47a332d9100e5944d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e440be88c89dc8703cb9e20af0ebca40 = $(`<div id="html_e440be88c89dc8703cb9e20af0ebca40" style="width: 100.0%; height: 100.0%;">     <b>The Amazing Spider-Man 2</b><br>     Director: Marc Webb<br>     Año: 2014<br>     Género: Acción / Superhéroes<br>     País: Estados Unidos<br>     Coordenadas: (40.7128, -74.006)     </div>`)[0];
+                popup_2f902436a8db12b47a332d9100e5944d.setContent(html_e440be88c89dc8703cb9e20af0ebca40);
+            
+        
+
+        marker_634628ced15ff29eea4c4efec3b15192.bindPopup(popup_2f902436a8db12b47a332d9100e5944d)
+        ;
+
+        
+    
+    
+            marker_634628ced15ff29eea4c4efec3b15192.bindTooltip(
+                `<div>
+                     The Amazing Spider-Man 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_634628ced15ff29eea4c4efec3b15192.setIcon(icon_ba5b9889a249c092e3e7c5c61a5507e3);
+            
+    
+            var marker_c6e47b5934c78fecc6f0f631eeaebda3 = L.marker(
+                [40.7283, -74.006],
+                {
+}
+            ).addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var icon_9a3fca47da95732db65135ff91897b17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24d03a49fa81d4fecc1cc0fac489bad3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d510818bad2d759fdee08df7ffff2d = $(`<div id="html_f3d510818bad2d759fdee08df7ffff2d" style="width: 100.0%; height: 100.0%;">     <b>Spider-Man 2</b><br>     Director: Sam Raimi<br>     Año: 2004<br>     Género: Acción / Ciencia ficción<br>     País: Estados Unidos<br>     Coordenadas: (40.7283, -74.006)     </div>`)[0];
+                popup_24d03a49fa81d4fecc1cc0fac489bad3.setContent(html_f3d510818bad2d759fdee08df7ffff2d);
+            
+        
+
+        marker_c6e47b5934c78fecc6f0f631eeaebda3.bindPopup(popup_24d03a49fa81d4fecc1cc0fac489bad3)
+        ;
+
+        
+    
+    
+            marker_c6e47b5934c78fecc6f0f631eeaebda3.bindTooltip(
+                `<div>
+                     Spider-Man 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6e47b5934c78fecc6f0f631eeaebda3.setIcon(icon_9a3fca47da95732db65135ff91897b17);
+            
+    
+            var marker_1a1a80137b09fd22ae8c2f46a5d1587c = L.marker(
+                [43.7001, -79.4163],
+                {
+}
+            ).addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var icon_34feda9bc0b708a88455b0d8e9ba3141 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_672c5761583ac8f1a11a40f45b8d15f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de51bbef2b38745691b600b9f5255335 = $(`<div id="html_de51bbef2b38745691b600b9f5255335" style="width: 100.0%; height: 100.0%;">     <b>It</b><br>     Director: Andy Muschietti<br>     Año: 2017<br>     Género: Terror<br>     País: Canadá<br>     Coordenadas: (43.7001, -79.4163)     </div>`)[0];
+                popup_672c5761583ac8f1a11a40f45b8d15f9.setContent(html_de51bbef2b38745691b600b9f5255335);
+            
+        
+
+        marker_1a1a80137b09fd22ae8c2f46a5d1587c.bindPopup(popup_672c5761583ac8f1a11a40f45b8d15f9)
+        ;
+
+        
+    
+    
+            marker_1a1a80137b09fd22ae8c2f46a5d1587c.bindTooltip(
+                `<div>
+                     It
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a1a80137b09fd22ae8c2f46a5d1587c.setIcon(icon_34feda9bc0b708a88455b0d8e9ba3141);
+            
+    
+            var marker_592aa85e4ca5820877b785e94bcc2337 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+            var icon_fbdd934d6c279d46b1a8420af501a7e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c3212dfaa2ffe57cf055365bb5c0a46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe453bb91d0c6aea660e70aa2d90831b = $(`<div id="html_fe453bb91d0c6aea660e70aa2d90831b" style="width: 100.0%; height: 100.0%;">     <b>Ratatouille</b><br>     Director: Brad Bird<br>     Año: 2007<br>     Género: Animación / Comedia<br>     País: Francia (ambientación)<br>     Coordenadas: (48.8566, 2.3522)     </div>`)[0];
+                popup_8c3212dfaa2ffe57cf055365bb5c0a46.setContent(html_fe453bb91d0c6aea660e70aa2d90831b);
+            
+        
+
+        marker_592aa85e4ca5820877b785e94bcc2337.bindPopup(popup_8c3212dfaa2ffe57cf055365bb5c0a46)
+        ;
+
+        
+    
+    
+            marker_592aa85e4ca5820877b785e94bcc2337.bindTooltip(
+                `<div>
+                     Ratatouille
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_592aa85e4ca5820877b785e94bcc2337.setIcon(icon_fbdd934d6c279d46b1a8420af501a7e2);
+            
+    
+            tile_layer_3e055bd9e9686313695a94004e18b97b.addTo(map_676f0230d2785bbc1a0d56cc333f7da6);
+        
+    
+                marker_b57dece90e05c21b8656554ad72b4578.setIcon(icon_b59c479cd0f28d4899764b9f2b23889c);
+            
+    
+                marker_634628ced15ff29eea4c4efec3b15192.setIcon(icon_ba5b9889a249c092e3e7c5c61a5507e3);
+            
+    
+                marker_c6e47b5934c78fecc6f0f631eeaebda3.setIcon(icon_9a3fca47da95732db65135ff91897b17);
+            
+    
+                marker_1a1a80137b09fd22ae8c2f46a5d1587c.setIcon(icon_34feda9bc0b708a88455b0d8e9ba3141);
+            
+    
+                marker_592aa85e4ca5820877b785e94bcc2337.setIcon(icon_fbdd934d6c279d46b1a8420af501a7e2);
+            
+</script>
+</html>
