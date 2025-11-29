@@ -148,7 +148,8 @@ elif  pagina_seleccionada == 'Experiencia':
     # Por ejemplo, puedes agregar un emoji de video 🎥 
 
     # Agregamos un video realizado en las practicas anteriores
-    st.video("https://drive.google.com/file/d/13ny-DQVBCgMN62DTXXXzEf-S9Bp530Yr/view?usp=sharing")
+
+    #st.video("https://drive.google.com/file/d/13ny-DQVBCgMN62DTXXXzEf-S9Bp530Yr/view?usp=sharing")
     
     # st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E"): Esta línea está mostrando un video en la aplicación web.
     # La función video toma como primer argumento la URL del video que se desea mostrar.
@@ -242,4 +243,5 @@ elif  pagina_seleccionada == 'Gráficos':
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
+
     
